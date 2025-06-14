@@ -1,26 +1,23 @@
 <?php
 require_once 'config/conexao.php';
-
 $usuario = 'admin';
 $senha_texto = 'admin123';
 $senha_hash = password_hash($senha_texto, PASSWORD_DEFAULT);
 
-$sql = "INSERT INTO administradores (usuario, senha) VALUES (:usuario, :senha)";
+// Adicionamos a coluna 'tipo' e o valor 'admin'
+$sql = "INSERT INTO administradores (usuario, senha, tipo) VALUES (:usuario, :senha, 'admin')";
 
 try {
     $stmt = $pdo->prepare($sql);
     $stmt->execute([':usuario' => $usuario, ':senha' => $senha_hash]);
-
-    echo "Administrador criado com sucesso!<br>";
-    echo "<b>Usuário:</b> " . htmlspecialchars($usuario) . "<br>";
-    echo "<b>Senha:</b> " . htmlspecialchars($senha_texto) . "<br>";
-    echo "<p style='color:red;'>AVISO: Apague o arquivo criar_admin.php do seu projeto agora!</p>";
-
+    echo "<h1>Administrador 'master' criado com sucesso!</h1>";
+    echo "<p><b>Usuário:</b> " . htmlspecialchars($usuario) . " | <b>Tipo:</b> admin</p>";
+    echo "<p style='color:red; font-weight: bold;'>AVISO: Apague o arquivo criar_admin.php do seu projeto agora por segurança!</p>";
 } catch (PDOException $e) {
     if ($e->getCode() == 23000) {
-        echo "Erro: O usuário '<b>" . htmlspecialchars($usuario) . "</b>' já existe.";
+        echo "<h1>Erro</h1><p>O usuário '<b>" . htmlspecialchars($usuario) . "</b>' já existe.</p>";
     } else {
-        echo "Erro ao criar administrador: " . $e->getMessage();
+        echo "<h1>Erro ao criar administrador</h1><p>" . $e->getMessage() . "</p>";
     }
 }
 ?>
