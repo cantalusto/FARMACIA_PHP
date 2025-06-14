@@ -20,7 +20,7 @@
                     <a href="crud_usuarios/" class="btn btn-warning btn-lg px-4">Gerenciar Usuários</a>
                 <?php endif; ?>
             </div>
-            <footer class="mt-5 text-muted"><p>Nomes dos integrantes do grupo: [Seus Nomes Aqui]</p></footer>
+            <footer class="mt-5 text-muted"><p>Nomes dos integrantes do grupo: [Lucas Cantarelli, Danilo Mendes e Thiago Duarte]</p></footer>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
