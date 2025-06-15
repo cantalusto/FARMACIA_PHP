@@ -106,6 +106,9 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            /* ADICIONADO PARA REMOVER O SUBLINHADO */
+            text-decoration: none; 
+            color: inherit;
         }
         
         .menu-card:hover {
