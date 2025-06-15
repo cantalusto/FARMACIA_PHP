@@ -1,6 +1,6 @@
 <?php
 $host = 'localhost';
-$dbname = 'farmacia_db';
+$dbname = 'farma2';
 $user = 'root';
 $pass = '';
 
