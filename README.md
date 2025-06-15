@@ -4,7 +4,7 @@
 ![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 
-##  фармацевтическое управление
+##  
 
 Um mini-sistema web responsivo desenvolvido em PHP com PDO para a gestão de uma farmácia fictícia. O projeto conta com um sistema de autenticação robusto com diferentes níveis de acesso e três módulos de gerenciamento (CRUDs).
 
@@ -85,9 +85,9 @@ Siga os passos abaixo para rodar o projeto em um ambiente local.
 -   Você verá o menu principal com apenas duas opções: "Consultar Clientes" e "Consultar Produtos".
 -   Ao acessar essas áreas, você verá as listas, mas não terá os botões para adicionar, editar ou excluir registros.
 
-## 👥 Autor
+## 👥 Autores
 
-* [Lucas Cantarelli Lustosa]
+* [Lucas Cantarelli Lustosa e Danilo Mendes]
 
 
 ---
